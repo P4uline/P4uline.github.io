@@ -21,7 +21,7 @@ twitter <a href="twitter.com/pauline_io">@pauline_io</a>
 
 <p>Working at Lunatech as a Senior software developer</p>
 
-<h3 id="specialized-in">Specialized in</h3>
+<h3 id="specialised-in">Specialised in</h3>
 
 <p>Java, Scala, Backend</p>
 
@@ -32,10 +32,17 @@ twitter <a href="twitter.com/pauline_io">@pauline_io</a>
   <li>Java, Scala, javascript, C, bash</li>
 </ul>
 
+<p><code class="language-plaintext highlighter-rouge">Scala</code></p>
+<ul>
+  <li>Circe, Tapir, Scodec, Parquet4s</li>
+  <li>Akka stream, Akka actors, Akka http</li>
+  <li>Kafka stream</li>
+  <li>Playframework</li>
+</ul>
+
 <p><code class="language-plaintext highlighter-rouge">Serialization</code></p>
 <ul>
   <li>Json, Protobuf, Avro, Yaml, Xml</li>
-  <li>Circe, Jackson</li>
 </ul>
 
 <p><code class="language-plaintext highlighter-rouge">Databases</code></p>
@@ -49,19 +56,19 @@ twitter <a href="twitter.com/pauline_io">@pauline_io</a>
   <li>Kafka, Rabbitmq</li>
 </ul>
 
-<p><code class="language-plaintext highlighter-rouge">Storage</code></p>
+<p><code class="language-plaintext highlighter-rouge">Web services</code></p>
 <ul>
-  <li>S3, Parquet</li>
+  <li>REST, gRPC</li>
 </ul>
 
-<p><code class="language-plaintext highlighter-rouge">Concurrency</code></p>
+<p><code class="language-plaintext highlighter-rouge">Storage</code></p>
 <ul>
-  <li>Akka-stream, Akka-actor</li>
+  <li>S3, Parquet, Hadoop</li>
 </ul>
 
 <p><code class="language-plaintext highlighter-rouge">Infra</code></p>
 <ul>
-  <li>Kubernetes, Docker, Kustomize, Lens, Minikube</li>
+  <li>Kubernetes, Docker, Kustomize, Lens, Minikube, Aws</li>
 </ul>
 
 <p><code class="language-plaintext highlighter-rouge">Configuration</code></p>
@@ -94,15 +101,29 @@ twitter <a href="twitter.com/pauline_io">@pauline_io</a>
 <p><code class="language-plaintext highlighter-rouge">01/2021 to now</code>
 <em>Scala developer</em> @ Lunatech for <em>Audi</em></p>
 <ul>
-  <li>Project: <em>IPO Input Process Output</em> Huge platform able to ingest, digest and forward data with a throughput of 5000 messages per seconds in full remote english speaking team</li>
+  <li>Project: <em>IPO Input Process Output</em> Data collector platform able to ingest, digest, transform and forward data with a throughput of 5000 messages per seconds in full remote english speaking team</li>
+  <li>Implement a decoder for binary file up to 4GB with scodec
+    <ul>
+      <li>-&gt; headers</li>
+      <li>-&gt; messages composed by bloc 32-bits aligned</li>
+      <li>-&gt; supports payloads of types int, float, double, string, uuid, list, maps</li>
+    </ul>
+  </li>
+  <li>Implementation of an ingest generic codec
+    <ul>
+      <li>-&gt; decoder json with circe</li>
+      <li>-&gt; read from azure eventhub kafka queue publish to aws kafka queue</li>
+      <li>-&gt; authentication to eventhub</li>
+    </ul>
+  </li>
   <li>Akka-stream services for audi ppe platform</li>
-  <li>Handeling broken connections to azure eventhub/kafka</li>
+  <li>Handling broken connections to azure eventhub/kafka</li>
   <li>Design streaming migration solution from aws kafka services to azure event hub services</li>
   <li>Data aggregation</li>
   <li>Testing</li>
   <li>Agent on duty on live and prelive stages</li>
   <li>Enhancement of service automation</li>
-  <li>Technical environment: <em>scala</em>, <em>akka-stream</em>, <em>kafka-stream</em>, <em>kubernetes</em>, <em>kafka</em>, <em>parquet</em>, <em>s3</em>, helm charts, kustomize, lens, minikube, event-hub, aws, azure, circe, protobuf, REST api, cassandra</li>
+  <li>Technical environment: <em>scala</em>, <em>akka-stream</em>, <em>kafka-stream</em>, <em>kubernetes</em>, <em>kafka</em>, <em>parquet</em>, <em>s3</em>, <em>helm charts</em>, <em>kustomize</em>, <em>lens</em>, <em>minikube</em>, <em>event-hub</em>, <em>aws</em>, <em>azure</em>, <em>circe</em>, <em>protobuf</em>, <em>REST api</em>, <em>cassandra</em></li>
 </ul>
 
 <p><code class="language-plaintext highlighter-rouge">06/2019 to 01/2021</code>
@@ -112,7 +133,7 @@ twitter <a href="twitter.com/pauline_io">@pauline_io</a>
   <li>Technical management of teams</li>
   <li>Java services developments</li>
   <li>Testing</li>
-  <li>Techical environment: <em>java</em>, <em>akka-stream</em>, <em>hexagonal architecture</em> pattern, <em>playframwork</em>, <em>javascript</em></li>
+  <li>Techical environment: <em>java</em>, <em>akka-stream</em>, <em>hexagonal architecture pattern</em>, <em>playframwork</em>, <em>javascript</em></li>
 </ul>
 
 <p><code class="language-plaintext highlighter-rouge">01/2019 to 06/2019</code>
@@ -199,8 +220,11 @@ Talk <em>Architecture Hexagonale</em> at Rivera Dev, Pas Sage en Seine</p>
 <p><code class="language-plaintext highlighter-rouge">2018</code>
 Talk <em>Un chatbot en 5 etapes</em> (A chatbot in 5 steps) at Riviera Dev, Devfest Toulouse</p>
 
-<p><code class="language-plaintext highlighter-rouge">2017</code>
-Intervention as software engineer in the roundtable meeting during the event <em>l’UPEM fête Ada Lovelace</em> (the university of Paris-Est celebrates Ada Lovelace) https://femmesavoir.hypotheses.org/615</p>
+<p><code class="language-plaintext highlighter-rouge">2017</code></p>
+<ul>
+  <li>Intervention as software engineer in the roundtable meeting during the event <em>l’UPEM fête Ada Lovelace</em> (the university of Paris-Est celebrates Ada Lovelace) https://femmesavoir.hypotheses.org/615</li>
+  <li>Workshop <em>Découverte de la programmation avec un kata</em></li>
+</ul>
 
 <p><code class="language-plaintext highlighter-rouge">2012</code></p>
 <ul>
@@ -210,7 +234,7 @@ Intervention as software engineer in the roundtable meeting during the event <em
 
 <h2 id="event-organisation">Event organisation</h2>
 
-<p><code class="language-plaintext highlighter-rouge">2021</code>
+<p><code class="language-plaintext highlighter-rouge">2022 - 2023</code>
 Leader of the collaborative organisation of <em>Hackdays</em>, internal events @ Lunatech French Office, 4 events / year</p>
 <ul>
   <li>Lead the organisational meetings</li>
@@ -247,7 +271,7 @@ Article <em>RabbitMq, le broker de message</em> published in <em>Programmez maga
 <em>Teacher assistant @ Gustave Eiffel University (France)</em></p>
 <ul>
   <li>Advanced java course</li>
-  <li>Algoritmic course</li>
+  <li>Algorithmic course</li>
   <li>C language course</li>
 </ul>
 

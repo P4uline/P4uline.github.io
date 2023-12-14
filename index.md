@@ -15,7 +15,7 @@ twitter <a href="twitter.com/pauline_io">@pauline_io</a>
 
 Working at Lunatech as a Senior software developer
 
-### Specialized in
+### Specialised in
 
 Java, Scala, Backend
 
@@ -25,9 +25,14 @@ Java, Scala, Backend
 `Languages`
 - Java, Scala, javascript, C, bash
 
+`Scala`
+- Circe, Tapir, Scodec, Parquet4s
+- Akka stream, Akka actors, Akka http
+- Kafka stream
+- Playframework
+
 `Serialization`
 - Json, Protobuf, Avro, Yaml, Xml
-- Circe, Jackson
 
 `Databases`
 - Mongodb, Cassandra, Couchbase
@@ -36,14 +41,14 @@ Java, Scala, Backend
 `Messaging`
 - Kafka, Rabbitmq
 
-`Storage`
-- S3, Parquet
+`Web services`
+- REST, gRPC
 
-`Concurrency`
-- Akka-stream, Akka-actor
+`Storage`
+- S3, Parquet, Hadoop
 
 `Infra`
-- Kubernetes, Docker, Kustomize, Lens, Minikube 
+- Kubernetes, Docker, Kustomize, Lens, Minikube, Aws 
 
 `Configuration`
 - Helm Charts templates
@@ -66,15 +71,23 @@ Java, Scala, Backend
 
 `01/2021 to now`
 *Scala developer* @ Lunatech for *Audi*
-- Project: *IPO Input Process Output* Huge platform able to ingest, digest and forward data with a throughput of 5000 messages per seconds in full remote english speaking team 
+- Project: *IPO Input Process Output* Data collector platform able to ingest, digest, transform and forward data with a throughput of 5000 messages per seconds in full remote english speaking team
+- Implement a decoder for binary file up to 4GB with scodec
+  - -> headers
+  - -> messages composed by bloc 32-bits aligned
+  - -> supports payloads of types int, float, double, string, uuid, list, maps
+- Implementation of an ingest generic codec
+  - -> decoder json with circe
+  - -> read from azure eventhub kafka queue publish to aws kafka queue   
+  - -> authentication to eventhub
 - Akka-stream services for audi ppe platform
-- Handeling broken connections to azure eventhub/kafka
+- Handling broken connections to azure eventhub/kafka
 - Design streaming migration solution from aws kafka services to azure event hub services
 - Data aggregation
 - Testing
 - Agent on duty on live and prelive stages
 - Enhancement of service automation
-- Technical environment: *scala*, *akka-stream*, *kafka-stream*, *kubernetes*, *kafka*, *parquet*, *s3*, helm charts, kustomize, lens, minikube, event-hub, aws, azure, circe, protobuf, REST api, cassandra
+- Technical environment: *scala*, *akka-stream*, *kafka-stream*, *kubernetes*, *kafka*, *parquet*, *s3*, *helm charts*, *kustomize*, *lens*, *minikube*, *event-hub*, *aws*, *azure*, *circe*, *protobuf*, *REST api*, *cassandra*
 
 `06/2019 to 01/2021`
 *Tech lead* @ Lunatech for *Darva*
@@ -82,7 +95,7 @@ Java, Scala, Backend
 - Technical management of teams
 - Java services developments
 - Testing
-- Techical environment: *java*, *akka-stream*, *hexagonal architecture* pattern, *playframwork*, *javascript*
+- Techical environment: *java*, *akka-stream*, *hexagonal architecture pattern*, *playframwork*, *javascript*
 
 `01/2019 to 06/2019`
 *Testing engineer* @ Lunatech for *Disney*
@@ -155,7 +168,8 @@ Talk *Architecture Hexagonale* at Rivera Dev, Pas Sage en Seine
 Talk *Un chatbot en 5 etapes* (A chatbot in 5 steps) at Riviera Dev, Devfest Toulouse
 
 `2017`
-Intervention as software engineer in the roundtable meeting during the event *l’UPEM fête Ada Lovelace* (the university of Paris-Est celebrates Ada Lovelace) https://femmesavoir.hypotheses.org/615
+- Intervention as software engineer in the roundtable meeting during the event *l’UPEM fête Ada Lovelace* (the university of Paris-Est celebrates Ada Lovelace) https://femmesavoir.hypotheses.org/615
+- Workshop *Découverte de la programmation avec un kata*  
 
 `2012`
 - Talk *Mongodb aggregation pipeline framework* at Human talks, Devoxx France, Devoxx Antwerpen, JUG Summer camp
@@ -163,7 +177,7 @@ Intervention as software engineer in the roundtable meeting during the event *l�
 
 ##  Event organisation
 
-`2021`
+`2022 - 2023`
 Leader of the collaborative organisation of *Hackdays*, internal events @ Lunatech French Office, 4 events / year
 - Lead the organisational meetings
 - Set up programmation
@@ -196,7 +210,7 @@ Article _RabbitMq, le broker de message_ published in *Programmez magazine* numb
 `01/2014 to 01/2021` 
 *Teacher assistant @ Gustave Eiffel University (France)*
 - Advanced java course
-- Algoritmic course
+- Algorithmic course
 - C language course
 
 ## Education
